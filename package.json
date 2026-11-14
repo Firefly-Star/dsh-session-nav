@@ -1,0 +1,50 @@
+{
+  "name": "dsh-session-nav",
+  "version": "0.1.0",
+  "description": "Arrow-key navigation between sidebar sessions in the DSH web sidebar: click a session, then use ↑/↓ (with automatic workspace expansion) to jump between sessions",
+  "type": "module",
+  "main": "index.js",
+  "icon": "assets/plugin-icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "assets/plugin-icon.svg",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh": ">=0.2.0-rc.2 <0.3.0-0"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "keyboard",
+    "navigation"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Firefly-Star/dsh-session-nav.git"
+  },
+  "homepage": "https://github.com/Firefly-Star/dsh-session-nav#readme",
+  "bugs": {
+    "url": "https://github.com/Firefly-Star/dsh-session-nav/issues"
+  },
+  "author": "Firefly-Star"
+}

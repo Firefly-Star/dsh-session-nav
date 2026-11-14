@@ -1,0 +1,7 @@
+# dsh-session-nav — profile patch shipped with the package.
+# `dsh plugin --profile <name> add` registers the package as a bundle layer, so
+# this insert list applies automatically; no manual edit of the profile's own
+# cordis.patch.yml is needed.
+- insert:
+    - id: dsh-session-nav
+      name: dsh-session-nav
